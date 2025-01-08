@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTATO</title>
+    <style>
+        /*resetando margens e padding*/
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        /*corpo da página*/
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        /* titulo */
+
+        h1 {
+            text-align: center;
+            color: #5d9b9b;
+            margin-bottom: 20px;
+        }
+
+        /*formulario */
+
+        form {
+            background-color: #ffffff ;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 450px;
+        }
+       
+        /*rotulos */
+
+        label {
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 8px;
+            display: block;
+
+        }
+
+        /*entradas */
+
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border 0.3s ease;
+                   
+        }
+     
+        /*efeitos suaves de foco nos camps */
+
+        input:focus, textarea:focus, select:focus {
+            border-color: #5d9b9b;
+        }
+
+        /*botão */
+
+        button {
+            background-color: #A1C6C6;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        /*mudanca da cor do botao na passagem de mouse */
+
+        button:hover {
+            background-color: #6b9c9c;
+        }
+
+    </style>
+    <script src="script.js" defer></script>
+
+
+
+</head>
+<body>
+    <h1>
+        CONTATO
+    </h1>
+
+    <form action="" method="post">
+        <div>
+            <label for="name">Nome: </label>
+            <input type="text" name="name" id="name" placeholder="digite seu nome" required>
+        </div>
+        
+
+       <div>
+        <label for="email">E-mail: </label>
+        <input type="email" name="email" id="email" placeholder="digite seu e-mail" required>
+       </div>
+
+       <div>
+        <label for="mensagem">Mensagem</label> <br>
+        <textarea name="mensagem" id="mensagem" rows="10"></textarea>
+       </div>
+
+       <div>
+        <label for="gereno">Genero</label>
+        <br>
+        <select name="genero" id="genero">
+            <option value="nada"></option>
+            <option value="homemcis">Homem Cis</option>
+            <option value="mulhercis">Mulher Cis</option>
+            <option value="homemtrans">Homem Transgenero</option>
+            <option value="mulhertrans">Mulher Transgenero</option>
+            <option value="outro">Outro</option>
+        </select>
+       </div>
+       
+        <p></p>
+        
+       <button type="submit">Enviar</button>
+    </form>
+    
+</body>
+</html>
